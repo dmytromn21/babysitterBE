@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-fi8F_hH0zm7I4XfRKRFXqPIok0-GYPTH4er4VmqMMGHBPl_vO3JZ8tCR8FUGR9dG/exec'
+GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw29Ime-dI2DENMwSoFWk625ayuEdjFOkvw648slA-pqkIwjTw4dqZbEm4xoktIRUhJhQ/exec'
 
 @app.route('/identify', methods=['POST'] )
 def identify():
