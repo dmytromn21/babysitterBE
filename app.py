@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw29Ime-dI2DENMwSoFWk625ayuEdjFOkvw648slA-pqkIwjTw4dqZbEm4xoktIRUhJhQ/exec'
 
